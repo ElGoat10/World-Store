@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="tienda.css">
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <!-- NAV  -->
+        <div class="nav container">
+
+            <!--Menu-->
+            <a href="index.html"><img class="mi" src="img/logo.png" alt=""></a>
+
+            <!--Icono Busqueda-->
+            <div class="icon">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        class="icon_menu" style="fill: rgba(255, 255, 255, 1); transform: msFilter">
+                        <path
+                            d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                        </path>
+                    </svg>
+                </a>
+                <!--Icono Busqueda-->
+
+                <!--Icono Carrito de Compras-->
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" id="cart-icon"
+                    class="icon_menu2" style="fill: rgba(255, 255, 255, 1); transform: msFilter">
+                    <path
+                        d="M4 20h2V10a1 1 0 0 1 1-1h12V7a1 1 0 0 0-1-1h-3.051c-.252-2.244-2.139-4-4.449-4S6.303 3.756 6.051 6H3a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2zm6.5-16c1.207 0 2.218.86 2.45 2h-4.9c.232-1.14 1.243-2 2.45-2z">
+                    </path>
+                    <path
+                        d="M21 11H9a1 1 0 0 0-1 1v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8a1 1 0 0 0-1-1zm-6 7c-2.757 0-5-2.243-5-5h2c0 1.654 1.346 3 3 3s3-1.346 3-3h2c0 2.757-2.243 5-5 5z">
+                    </path>
+                </svg>
+
+                <!--Icono Carrito de Compras-->
+
+                <!--Icono Menu-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30   " viewBox="0 0 24 24" class="icon_menu"
+                    style="fill: rgba(255, 255, 255, 1);transform: msFilter">
+                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                </svg>
+                <!--Icono Menu-->
+            </div>
+            <!--Menu-->
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Carrito de Compras</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy">Comprar Ya</button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+            <!-- Menú lateral -->
+            <div class="sidebar">
+                <img class="mi lateral" src="IMG/logo.png" alt="">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="index.html#sobrenoso">SOBRE NOSOTROS</a></li>
+                        <li><a href="Tienda 2.html">PRODUCTOS</a></li>
+                        <li><a href="index.html#quiene">QUIENES SOMOS</a></li>
+                        <li><a href="contactos.html">CONTACTOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">NUESTROS PRODUCTOS</h2>
+
+        <div class="product-buttons">
+            <button class="iphone-button">iPhone</button>
+            <button class="mac-button">Mac</button>
+            <button class="apple-watch-button">Apple Watch</button>
+        </div>
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box" id="iphone14-pro-max">
+                <img src="img/1.webp" alt="" class="product-img" onclick="openPopup('Iphone 14 Pro Max', '$1500', 'Procesador: Chip Apple A16 Bionic Pantalla: OLED ProMotion de 6.9 pulgadas Resolución de pantalla: 2778 x 1284 píxeles Almacenamiento interno: 128 GB / 256 GB / 512 GB (varía según la opción) Memoria RAM: 6 GB', 'img/1.webp')">
+                <h2 class="product-title">Iphone 14 Pro Max</h2>
+                <span class="product-price">$1500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="img/2.webp" alt="" class="product-img" onclick="openPopup('Iphone 14 Pro', '$1000', 'Procesador: Chip Apple A16 Bionic Pantalla: OLED ProMotion de 6.1 pulgadas Resolución de pantalla: 2532 x 1170 píxeles Almacenamiento interno: 128 GB / 256 GB / 512 GB (varía según la opción) Memoria RAM: 6 GB' , 'img/2.webp')">
+                <h2 class="product-title">Iphone 14 Pro</h2>
+                <span class="product-price">$1000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="img/3.webp" alt="" class="product-img" onclick="openPopup('Iphone 14', '$850', 'Procesador: Chip Apple A16 Bionic Pantalla: OLED de 6.1 pulgadas Resolución de pantalla: 2532 x 1170 píxeles Almacenamiento interno: 64 GB / 128 GB / 256 GB (varía según la opción) Memoria RAM: 4 GB', 'img/3.webp')">
+                <h2 class="product-title">Iphone 14</h2>
+                <span class="product-price">$850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="img/4.webp" alt="" class="product-img" onclick="openPopup('Iphone 13', '$500', 'Procesador: Chip Apple A15 Bionic Pantalla: OLED de 6.1 pulgadas Resolución de pantalla: 2532 x 1170 píxeles Almacenamiento interno: 128 GB / 256 GB / 512 GB (varía según la opción) Memoria RAM: 4 GB', 'img/4.webp')">
+                <h2 class="product-title">Iphone 13</h2>
+                <span class="product-price">$500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="img/5.webp" alt="" class="product-img" onclick="openPopup('MacBook Air', '$3000', 'Procesador: Chip Apple M1 Pantalla: Retina de 13.3 pulgadas con tecnología True Tone Resolución de pantalla: 2560 x 1600 píxeles Almacenamiento interno: 256 GB / 512 GB / 1 TB / 2 TB (varía según la opción) Memoria RAM: 8 GB / 16 GB (configurable hasta 16 GB)', 'img/5.webp')">
+                <h2 class="product-title">MacBook Air</h2>
+                <span class="product-price">$3000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="img/6.webp" alt="" class="product-img" onclick="openPopup('MacBook Pro', '$3500', 'Procesador: Chip Apple M2 Pantalla: Retina de 15.3 pulgadas con tecnología True Tone Resolución de pantalla: 2560 x 1600 píxeles Almacenamiento interno: 256 GB / 512 GB / 1 TB / 2 TB (varía según la opción) Memoria RAM: 8 GB / 16 GB (configurable hasta 16 GB)', 'img/6.webp')">
+                <h2 class="product-title">MacBook Pro</h2>
+                <span class="product-price">$3500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="img/7.webp" alt="" class="product-img" onclick="openPopup('MacBook Air', '$2500', 'Procesador: Chip Apple M1 Pantalla: Retina de 13.3 pulgadas con tecnología True Tone Resolución de pantalla: 2560 x 1600 píxeles Almacenamiento interno: 256 GB / 512 GB / 1 TB / 2 TB (varía según la opción) Memoria RAM: 8 GB / 16 GB (configurable hasta 16 GB)', 'img/7.webp')">
+                <h2 class="product-title">MacBook Air</h2>
+                <span class="product-price">$2500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="img/8.webp" alt="" class="product-img" onclick="openPopup('MacBook Pro', '$3100', 'Procesador: Chip Apple M2 Pantalla: Retina de 15.3 pulgadas con tecnología True Tone Resolución de pantalla: 2560 x 1600 píxeles Almacenamiento interno: 256 GB / 512 GB / 1 TB / 2 TB (varía según la opción) Memoria RAM: 8 GB / 16 GB (configurable hasta 16 GB)', 'img/8.webp')">
+                <h2 class="product-title">MacBook Pro</h2>
+                <span class="product-price">$3100</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo1.PNG" alt="" class="product-img" onclick="openPopup('Apple Watch SE', '$249', 'Pantalla Retina siempre activa de 40 mm o 44 mm. Procesador S5 de doble núcleo. Resistencia al agua hasta 50 metros. Sensores de frecuencia cardíaca y oxígeno en sangre. GPS incorporado. Altímetro barométrico. Disponible en modelos de aluminio reciclado.', 'img/relo1.PNG')">
+                <h2 class="product-title">Apple Watch SE</h2>
+                <span class="product-price">$249</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo2.PNG" alt="" class="product-img" onclick="openPopup('Apple Watch Series 9', '$399', 'Pantalla Retina siempre activa de 41 mm o 45 mm. Carcasa resistente a los golpes y al polvo. Procesador S7 de doble núcleo. Resistencia al agua hasta 50 metros. Sensores de frecuencia cardíaca y oxígeno en sangre. GPS incorporado. Disponible en varios materiales y correas.', 'img/relo2.PNG')">
+                <h2 class="product-title">Apple Watch Series 9</h2>
+                <span class="product-price">$399</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo3.PNG" alt="" class="product-img" onclick="openPopup('Apple Watch Ultra 2', '$699', 'Pantalla OLED de 50 mm con bordes ultrafinos. Carcasa de titanio resistente al agua. Procesador A17 Bionic de tres núcleos. Sensores avanzados para monitoreo de salud. GPS y conectividad celular 6G. Batería de larga duración. Disponible en una variedad de colores y acabados metálicos. Compatible con correas intercambiables.', 'img/relo3.PNG')">
+                <h2 class="product-title">Apple Watch Ultra 2</h2>
+                <span class="product-price">$699</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo4.png" alt="" class="product-img" onclick="openPopup('Apple Watch Ultra 3', '$799', 'Pantalla Retina siempre activa de 41 mm o 45 mm. Carcasa resistente a los golpes y al polvo. Procesador S7 de doble núcleo. Resistencia al agua hasta 50 metros. Sensores de frecuencia cardíaca y oxígeno en sangre. GPS incorporado. Disponible en varios materiales y correas.', 'img/relo4.png')">
+                <h2 class="product-title">Apple Watch Ultra 3</h2>
+                <span class="product-price">$799</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+
+        <!-- Iphone -->
+        <div class="iphone-products">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="img/1.webp" alt="" class="product-img">
+                <h2 class="product-title">Iphone 14 Pro Max</h2>
+                <span class="product-price">$1500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="img/2.webp" alt="" class="product-img">
+                <h2 class="product-title">Iphone 14 Pro</h2>
+                <span class="product-price">$1000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="img/3.webp" alt="" class="product-img">
+                <h2 class="product-title">Iphone 14</h2>
+                <span class="product-price">$850</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="img/4.webp" alt="" class="product-img">
+                <h2 class="product-title">Iphone 13</h2>
+                <span class="product-price">$500</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="img/9.jpg" alt="" class="product-img">
+                <h2 class="product-title">Iphone XS Max</h2>
+                <span class="product-price">$200</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="img/10.webp" alt="" class="product-img">
+                <h2 class="product-title">Iphone XR</h2>
+                <span class="product-price">$250</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="img/11.webp" alt="" class="product-img">
+                <h2 class="product-title">Iphone 8 PLUS</h2>
+                <span class="product-price">$150</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="img/12.jpg" alt="" class="product-img">
+                <h2 class="product-title">Iphone 8</h2>
+                <span class="product-price">$100</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="img/13.webp" alt="" class="product-img">
+                <h2 class="product-title">Iphone 11</h2>
+                <span class="product-price">$600</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="img/14.jpg" alt="" class="product-img">
+                <h2 class="product-title">Iphone 12 MINI</h2>
+                <span class="product-price">$300</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="img/15.webp" alt="" class="product-img">
+                <h2 class="product-title">Iphone 13</h2>
+                <span class="product-price">$400</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="img/1.webp" alt="" class="product-img">
+                <h2 class="product-title">Iphone 15 PRO MAX</h2>
+                <span class="product-price">$2000</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+        <!-- Iphone -->
+
+        <!-- Mac -->
+        <div class="mac-products">
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="img/5.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Air</h2>
+                <span class="product-price">$95</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="img/6.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Pro</h2>
+                <span class="product-price">$1400</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="img/7.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Air</h2>
+                <span class="product-price">$1700</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="img/6.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Pro</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="img/5.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Air</h2>
+                <span class="product-price">$95</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="img/6.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Pro</h2>
+                <span class="product-price">$1400</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="img/7.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Air</h2>
+                <span class="product-price">$1700</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="img/6.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Pro</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="img/5.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Air</h2>
+                <span class="product-price">$95</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="img/6.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Pro</h2>
+                <span class="product-price">$1400</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="img/7.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Air</h2>
+                <span class="product-price">$1700</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="img/6.webp" alt="" class="product-img">
+                <h2 class="product-title">MacBook Pro</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+        <!-- Mac -->
+
+        <!-- Apple Watch -->
+        <div class="apple-watch-products">
+            <div class="product-box">
+                <img src="img/relo1.PNG" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo2.PNG" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo3.PNG" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo4.png" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo1.PNG" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo2.PNG" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo3.PNG" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo4.png" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo1.PNG" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo2.PNG" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo3.PNG" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <div class="product-box">
+                <img src="img/relo4.png" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+        <!-- Apple Watch -->
+    </section>
+
+    <!-- Popup -->
+    <div class="popup" id="productPopup">
+        <div class="popup-content">
+            <img src="" alt="Product Image" class="product-image">
+            <div class="product-details">
+                <h2 class="product-title">IPHONE 14 PRO MAX</h2>
+                <p class="product-features">
+                    Procesador: Chip Apple A16 Bionic<br/>
+                    Pantalla: OLED ProMotion de 6.9 pulgadas<br/>
+                    Resolución de pantalla: 2778 x 1284 píxeles<br/>
+                    Almacenamiento interno: 128 GB / 256 GB / 512 GB (varía según la opción)<br/>
+                    Memoria RAM: 6 GB</p>
+                <p class="product-price">$500</p>
+                <input type="number" class="product-quantity" value="1" min="1">
+                <button class="btn-buy" onclick="buyProduct()">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- link js  -->
+    <script src="main.js"></script>
+</body>
+
+</html>

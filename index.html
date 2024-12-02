@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Store</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <header data-aos="fade-down" data-aos-duration="1300">
+                <!--Menu-->
+                <img class="mi" src="IMG/logo.png" alt="">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="#sobrenoso">SOBRE NOSOTROS</a></li>
+                        <li><a href="Tienda 2.html">PRODUCTOS</a></li>
+                        <li><a href="#quiene">QUIENES SOMOS</a></li>
+                        <li><a href="contactos.html">CONTACTOS</a></li>
+                    </ul>
+                </nav>
+                <!--Icono Busqueda, Carrito de Compras y de Usuario-->
+                <div class="icon">
+                    <a href="#" id="searchIcon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            viewBox="0 0 24 24" class="icon_menu"
+                            style="fill: rgba(255, 255, 255, 1); transform: msFilter">
+                            <path
+                                d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a id="cart-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            class="icon_menu" style="fill: rgba(255, 255, 255, 1); transform: msFilter">
+                            <path
+                                d="M4 20h2V10a1 1 0 0 1 1-1h12V7a1 1 0 0 0-1-1h-3.051c-.252-2.244-2.139-4-4.449-4S6.303 3.756 6.051 6H3a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2zm6.5-16c1.207 0 2.218.86 2.45 2h-4.9c.232-1.14 1.243-2 2.45-2z">
+                            </path>
+                            <path
+                                d="M21 11H9a1 1 0 0 0-1 1v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8a1 1 0 0 0-1-1zm-6 7c-2.757 0-5-2.243-5-5h2c0 1.654 1.346 3 3 3s3-1.346 3-3h2c0 2.757-2.243 5-5 5z">
+                            </path>
+                        </svg>
+                    </a>
+
+                    <a id="userBtn"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                            class="icon_menu" style="fill: rgba(255, 255, 255, 1); transform: msFilter">
+                            <path
+                                d="M12 2A10.13 10.13 0 0 0 2 12a10 10 0 0 0 4 7.92V20h.1a9.7 9.7 0 0 0 11.8 0h.1v-.08A10 10 0 0 0 22 12 10.13 10.13 0 0 0 12 2zM8.07 18.93A3 3 0 0 1 11 16.57h2a3 3 0 0 1 2.93 2.36 7.75 7.75 0 0 1-7.86 0zm9.54-1.29A5 5 0 0 0 13 14.57h-2a5 5 0 0 0-4.61 3.07A8 8 0 0 1 4 12a8.1 8.1 0 0 1 8-8 8.1 8.1 0 0 1 8 8 8 8 0 0 1-2.39 5.64z">
+                            </path>
+                            <path
+                                d="M12 6a3.91 3.91 0 0 0-4 4 3.91 3.91 0 0 0 4 4 3.91 3.91 0 0 0 4-4 3.91 3.91 0 0 0-4-4zm0 6a1.91 1.91 0 0 1-2-2 1.91 1.91 0 0 1 2-2 1.91 1.91 0 0 1 2 2 1.91 1.91 0 0 1-2 2z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!--Icono Busqueda, Carrito de Compras y de Usuario-->
+                </div>
+                <!--Menu-->
+
+                <!-- Carrito de Compra-->
+                <div class="cart">
+                    <h2 class="cart-title">Carrito de Compras</h2>
+                    <div class="cart-content">
+                    </div>
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <button type="button" class="btn-buy">Comprar Ya</button>
+                    <i class='bx bx-x' id="cart-close"></i>
+                </div>
+                <!-- Carrito de Compra-->
+            </header>
+
+            <!--Barra de busqueda-->
+            <!--Barra de busqueda-->
+
+            <!-- Formularios -->
+            <div id="loginFormContainer">
+                <div id="overlay"></div>
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <h2 class="h2">Iniciar Sesion</h2>
+                        <form class="form" id="loginForm">
+                            <div class="input-container">
+                                <i class="fas fa-envelope icon"></i>
+                                <input type="email" id="email" name="email" placeholder="Correo Electronico" required>
+                            </div>
+                            <div class="input-container">
+                                <i class="fas fa-key icon"></i>
+                                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit">Enviar</button>
+                            <p>¿No tienes una cuenta? <a id="showRegisterForm">Regístrate</a></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="registerModal" class="modal">
+                    <div class="modal-content">
+                        <h2 class="h2">Registrate</h2>
+                        <form class="form" id="registerForm">
+                            <div class="input-container">
+                                <i class="fas fa-user icon"></i>
+                                <input type="text" id="nombre" name="name" placeholder="Nombre Completo" required>
+                            </div>
+                            <div class="input-container">
+                                <i class="fas fa-envelope icon"></i>
+                                <input type="email" id="email" name="email" placeholder="Correo Electronico" required>
+                            </div>
+                            <div class="input-container">
+                                <i class="fas fa-key icon"></i>
+                                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit">Enviar</button>
+                            <p>¿Ya tienes una cuenta? <a id="showLoginForm">Inicia Sesion</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Formularios -->
+
+            <!-- Home Page -->
+            <div class="BackDrop" data-aos="fade-down" data-aos-duration="1300">
+                <div class="texto" data-aos="zoom-in-down" data-aos-duration="1300">
+                    <h1>BIENVENIDOS A WORLD STORE</h1>
+                    <h2>"Explora el universo Apple en World Store.</h2>
+                </div>
+                <div class="btn" data-aos="zoom-out-up" data-aos-duration="1300">
+                    <a href="Tienda 2.html"><button type="button" class="compra">COMPRA YA!</button></a>
+                    <a href="#sobrenoso"><button type="button" class="sobre">SOBRE NOSOTROS</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- Home Page -->
+
+        <!-- Seccion Sobre Nosotros -->
+        <div class="nosotros" id="sobrenoso">
+            <h2 id="sobre-nosotros" data-aos="fade-up" data-aos-duration="1300">SOBRE NOSOTROS</h2>
+            <div class="borde2" data-aos="fade-up" data-aos-duration="1300"></div>
+            <p class="p" data-aos="fade-down" data-aos-duration="1300">
+                Somos un sistema de Tienda online que vende Dispositivos de IOS como
+                Móviles, Computadoras, audiculares etc. De todo tipo y variedad, te
+                comunicamos y te actualizamos con todos nuestras actualizaciones y
+                productos.
+            </p>
+
+            <div class="borde3"></div>
+        </div>
+        <!-- Seccion Sobre Nosotros -->
+
+        <!-- Seccion Quienes Somos -->
+        <div class="quienes-somos" id="quiene">
+            <h2 data-aos="fade-right" data-aos-duration="1300">¿QUIENES SOMOS?</h2>
+            <img src="IMG/about 1.png" class="about" data-aos="zoom-in" data-aos-duration="1300" />
+            <div class="mision" data-aos="fade-left" data-aos-duration="1300">
+                <h3>MISION</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="#2020ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+                    <path d="M11 4h2" />
+                    <path d="M12 17v.01" />
+                </svg>
+                <p>"Nuestra misión es brindar acceso sencillo y confiable a la tecnología Apple, enriqueciendo la vida
+                    digital de nuestros clientes con productos de calidad y un servicio excepcional."</p>
+            </div>
+            <div class="vision" data-aos="fade-left" data-aos-duration="1300">
+                <h3>VISION</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="#2020ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-devices-2">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 15h-6a1 1 0 0 1 -1 -1v-8a1 1 0 0 1 1 -1h6" />
+                    <path d="M13 4m0 1a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-6a1 1 0 0 1 -1 -1z" />
+                    <path d="M7 19l3 0" />
+                    <path d="M17 8l0 .01" />
+                    <path d="M17 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                    <path d="M9 15l0 4" />
+                </svg>
+                <p>"Nuestra visión es ser el destino preferido de los amantes de la tecnología Apple, ofreciendo una
+                    experiencia de compra sin igual y liderando en innovación y excelencia."
+                </p>
+            </div>
+            <div class="borde3"></div>
+        </div>
+        <!-- Seccion Quienes Somos -->
+
+        <!-- Seccion Nuestros Valores -->
+        <div class="valore">
+            <h2 data-aos="fade-up" data-aos-duration="1300">NUESTROS VALORES</h2>
+            <div class="borde4" data-aos="fade-up" data-aos-duration="1300"></div>
+            <div class="divs">
+                <div class="vol" data-aos="fade-right" data-aos-duration="1300">
+                    <h4>HONESTIDAD</h4>
+                    <p>"Nuestra tienda se distingue por su honestidad al ofrecer información transparente sobre nuestros
+                        productos, precios y políticas."</p>
+                </div>
+                <div class="vol" data-aos="fade-right" data-aos-duration="1300">
+                    <h4>RESPONSABILIDAD</h4>
+                    <p>"Nos comprometemos a ser responsables en todas nuestras acciones y decisiones, manteniendo la
+                        confianza de nuestros clientes y colaboradores."</p>
+                </div>
+                <div class="vol" data-aos="fade-right" data-aos-duration="1300">
+                    <h4>INNOVACIÓN</h4>
+                    <p>"Buscamos constantemente nuevas formas de mejorar nuestros productos y servicios, adaptándonos a
+                        las necesidades cambiantes del mercado."</p>
+                </div>
+                <div class="vol" data-aos="fade-left" data-aos-duration="1300">
+                    <h4>COMPROMISO</h4>
+                    <p>"Estamos comprometidos con la satisfacción del cliente, ofreciendo productos de calidad y un
+                        excelente servicio en todo momento."</p>
+                </div>
+                <div class="vol" data-aos="fade-left" data-aos-duration="1300">
+                    <h4>COMPROMISO</h4>
+                    <p>"Estamos comprometidos con la satisfacción del cliente, ofreciendo productos de calidad y un
+                        excelente servicio en todo momento."</p>
+                </div>
+                <div class="vol" data-aos="fade-left" data-aos-duration="1300">
+                    <h4>COMPROMISO</h4>
+                    <p>"Estamos comprometidos con la satisfacción del cliente, ofreciendo productos de calidad y un
+                        excelente servicio en todo momento."</p>
+                </div>
+            </div>
+        </div>
+        <!-- Seccion Nuestros Valores -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <h3>World Store</h3>
+                <p>"No te pierdas ninguna novedad. Únete a nuestras redes sociales y sé el primero en conocer nuestros
+                    nuevos productos."</p>
+                <ul class="socials">
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z">
+                                </path>
+                            </svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z">
+                                </path>
+                                <circle cx="11.994" cy="11.979" r="3.003"></circle>
+                            </svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+                                <path
+                                    d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z">
+                                </path>
+                            </svg></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2024 World Store. designed by <span>Carlos Adrian</span></p>
+            </div>
+        </footer>
+        <!-- Footer -->
+
+        <!-- Scripts -->
+        <script>
+            AOS.init();
+        </script>
+
+        <script src="js.js"></script>
+        <script src="main.js"></script>
+        <!-- Scripts -->
+    </div>
+</body>
+
+</html>
